@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Aaron - List Belanja</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="modal">
+      <form id="addlist_form" autocomplete="off">
+        <h3>Tambah List Belanja</h3>
+
+        <div class="form_group">
+          <label for="barang">Barang</label>
+          <input type="text" name="barang" id="barang" required />
+        </div>
+
+        <div class="form_group">
+          <label for="harga">Harga</label>
+          <input type="number" name="harga" id="harga" required />
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+      <div id="modal_bg"></div>
+    </div>
+
+    <main class="container">
+      <h1 class="title">List Belanja - Aaron</h1>
+      <h3 id="subtitle"></h3>
+      <div id="root">
+        <!-- di render dari js -->
+      </div>
+      <button class="floating_button" id="floating_button">+</button>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

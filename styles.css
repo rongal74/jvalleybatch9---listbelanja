@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: whitesmoke;
+}
+
+h1,
+h2,
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: inherit;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+
+.splash {
+  background-color: black;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.splash h3 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.splash h1 {
+  font-size: 64px;
+  font-weight: 300;
+}
+
+.btn_splash {
+  height: 40px;
+  width: 250px;
+  background-color: #f280b6;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.floating_button {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #f280b6;
+  color: white;
+  border: none;
+  outline: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 24px;
+  transition-duration: 500ms;
+}
+
+#modal {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+#addlist_form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 4px 5px 7px rgba(0, 0, 0, 0.144);
+}
+
+#addlist_form h3 {
+  font-weight: 300;
+  text-align: center;
+}
+
+.form_group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form_group label {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.form_group input {
+  height: 40px;
+  padding: 0 16px;
+  border-radius: 40px;
+  border: 0.5px solid gray;
+}
+.form_group input:focus {
+  outline: 1px solid #f280b6;
+  border: none;
+}
+
+#addlist_form button {
+  height: 40px;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  width: 40%;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: auto;
+  background-color: black;
+  color: white;
+}
+
+#modal_bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.43);
+  z-index: -1;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+  box-shadow: 4px 5px 7px rgba(0, 0, 0, 0.166);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.card small {
+  text-align: center;
+  font-weight: 300;
+  color: gray;
+}
+
+.card div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-transform: capitalize;
+  height: 40px;
+  align-items: center;
+}
+
+.card button {
+  height: 35px;
+  width: 30%;
+  background-color: black;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  margin-left: auto;
+}
+
+.title {
+  text-align: center;
+  font-weight: 500;
+}
+
+#subtitle {
+  text-align: center;
+  font-weight: 300;
+}
+
+.linebreak {
+  margin-top: 20px;
+  border-bottom: 1px solid #dddddd;
+}
